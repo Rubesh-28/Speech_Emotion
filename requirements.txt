@@ -3,4 +3,4 @@ numpy==1.24.3
 pandas==2.0.0
 streamlit==1.26.0
 tensorflow==2.13.0
-matplotlib
+matplotlib==1.16.0
