@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import librosa
 import tensorflow as tf
-import matplotlib.pyplot as plt
 import librosa.display
 import tempfile
 import os
@@ -47,11 +46,8 @@ if audio_file is not None:
 
     # Display the audio waveform
     audio_data, sampling_rate = librosa.load(temp_audio_file.name, sr=None)
-    plt.figure(figsize=(10, 4))
     librosa.display.waveshow(audio_data, sr=sampling_rate, color='b')
-    plt.xlabel("Time (s)")
-    plt.ylabel("Amplitude")
-    plt.title("Audio Waveform")
+
     st.pyplot()
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
