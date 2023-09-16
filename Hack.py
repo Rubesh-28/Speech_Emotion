@@ -47,6 +47,7 @@ if audio_file is not None:
     # Display the audio waveform
     audio_data, sampling_rate = librosa.load(temp_audio_file.name, sr=None)
     librosa.display.waveshow(audio_data, sr=sampling_rate, color='b')
+    st.pyplot(fig=None, clear_figure=None, use_container_width=True, **kwargs)
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
     # Remove the temporary audio file
