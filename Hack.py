@@ -30,7 +30,7 @@ if audio_file is not None:
     predictions = model.predict(X_pred)
 
     # Convert the predictions to emotion labels
-    class_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+    class_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral','surprise','sad']
     predicted_emotion_index = np.argmax(predictions)
     predicted_emotion = class_labels[predicted_emotion_index]
 
