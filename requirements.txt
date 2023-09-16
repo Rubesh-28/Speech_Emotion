@@ -1,10 +1,6 @@
+numpy==1.21.2
+librosa==0.8.1
+tensorflow==2.5.0
 matplotlib==3.4.3
-librosa==0.10.1
-numpy==1.24.3
+streamlit==1.14.0
 
-pandas==2.1.0
-
-
-streamlit==1.26.0
-
-tensorflow==2.13.0
