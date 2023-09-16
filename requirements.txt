@@ -3,3 +3,5 @@ librosa
 streamlit
 numpy
 pandas
+matplotlib
+os
